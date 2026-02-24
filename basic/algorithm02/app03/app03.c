@@ -1,4 +1,4 @@
-﻿// p. 스택 구현
+﻿// p148~149. 스택 구현
 
 #define _CRT_SECURE_NO_WARNINGS
 
@@ -14,12 +14,19 @@ int main(void) {
 		return 1;	// == exit(1);
 	}
 
+	int menu, x, ch;
+
 	while (1) {	// 무한루프
 		// 스택 기능 구현
-		int menu, x;
+		menu = -1;
+		
 		printf("현재 데이터 수 : %d / %d\n", Size(&st), Capacity(&st));
 		printf("(1)푸시, (2)팝, (3)피크, (4)출력, (5)검색, (6)클리어, (0)종료 > ");	scanf("%d", &menu);
 
+		// 잘못된 키보드 입력 버퍼를 제거
+		// 기초 프로그래밍 주소록 토이프로젝트 소스 참조
+		while ((ch = getchar()) != '\n' && ch != EOF) {}
+		
 		if (menu == 0) break;	// 종료 처리
 
 		switch (menu) {
@@ -77,6 +84,10 @@ int main(void) {
 		case 6:	// 스택 클리어
 			Clear(&st);
 			puts("스택 클리어!");
+			break;
+
+		default:	// 오류잡기
+			puts("입력오류!");
 			break;
 		}
 	}
