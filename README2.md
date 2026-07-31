@@ -116,9 +116,23 @@ https://school.programmers.co.kr/
     - 특정 타입을 한정하지 않는 라이브러리
     - `컨테이너`, `알고리즘`, `반복자`
 
-- STL 컨테이너
-- STL 알고리즘
+- STL 컨테이너 - C#, Java, Python에서 **Collection**으로 호칭 - [소스](./advanced/algorithm01/app03/app03.cpp)
+   - 시퀀스 타입 - `벡터`, 리스트, 배열, 데크 등
+   - 연관 타입 - `셋`, `맵`, 멀티셋, 멀티맵 등
+   - 어댑터 타입 - 스택, 큐, 우선순위 큐
+
+- STL 알고리즘 - 정렬, 검색 등 기본적인 알고리즘 - [소스](./advanced/algorithm01/app04/app04.cpp)
+   - `find()`, `count()`, for_each(), equal(), any_of() 등
+   - copy(), replace(), fill(), transform() 등
+   - reverse(), remove(), `unique()`, rotate() 등
+   - `sort()`, stable_sort(), partial_sort() 등
+   - `binary_search()`, lower_bound(), upper_bound(), set_union() 등
+   - `next_permutation()`, accumalate(), partial_sum() 등
+   - `max_element()`, `min_element()`, clamp() 등
+
 - 함수
+
+
 - 코딩 테스트 코드 구현 노하우
 
 
