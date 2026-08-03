@@ -7,4 +7,6 @@
   <Project Path="app02/app02.vcxproj" Id="ff56cd54-5083-4ef4-b3ee-0c1339a3323a" />
   <Project Path="app03/app03.vcxproj" Id="1c677c82-e5e0-4436-af0e-a91d2f6c6f5c" />
   <Project Path="app04/app04.vcxproj" Id="5914c359-7235-4631-b35b-54abf4d78f7c" />
+  <Project Path="app05/app05.vcxproj" Id="810ac97c-a8eb-4af3-a8fd-b5ad76ab45a7" />
+  <Project Path="app06/app06.vcxproj" Id="ae171018-2f90-420f-b0a9-d25f296f76b8" />
 </Solution>

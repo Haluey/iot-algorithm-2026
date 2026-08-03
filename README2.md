@@ -54,15 +54,15 @@
 2. 제약(제한)사항 파악하고 테스트케이스 추가할 것
 3. 입력 크기 분석(시간복잡도 연관)
 4. 핵심 키워드 파악
+
    1. **최적의 해** - 너비 우선 탐색
    2. **정렬된 상태의 데이터** - 이진 탐색, 파라메트릭 탐색
    3. **최단 경로** - 다익스트라, 벨만-포드, 폴로이드-워셜 알고리즘
-
 5. 데이터 흐름, 구성 파악
+
    1. 힙 자료구조 - 데이터 삽입과 삭제가 빈번할 것 같은 예상
    2. 전체 탐색 - 최적화된 해결책이 떠오르지 않으면
    3. 딕셔너리 - 전화번호부 저장
-
 6. 의사코드(pseudo code)로 먼저 작성하기
 
 <br>
@@ -72,10 +72,10 @@
 | --- | --- | --- |
 | 스택 | 쌍이 맞는지<br>최근 | - 저장을 한 뒤 반대로 처리가 필요<br>- 데이터의 조합이 균형적이어야 할 때<br>- 알고리즘이 재귀적인 특성<br>- 최근 상태 추척 |
 | 큐 | 순서대로<br>~대로 동작하는 경우<br>스케줄링<br>최소 시간 | - 특정 조건에 따라 시뮬레이션할 때<br>- 시작 지점 부터 목표 지점까지 최단 거리 |
-| 깊이 우선 탐색 | 모든 경로 | - 메모리 사용량이 제한적인 탐색<br>- 백트래킹 문제 |
-| 너비 우선 탐색 | 최적<br>레벨 순회<br>최소 단계<br>네트워크 전파 | - 시작 지점부터 최단 경로나 최소 횟수를 찾아야 함 |
-| 백트래킹 | 조합<br>순열<br>부분 집합 | - 조합 및 순열 문제<br>- 특정 조건 만족하는 부분 집합 |
-| 최단 경로 | 최단 경로<br>최소 시간<br>최소 비용<br>트래픽<br>음의 순환<br>단일 출발점 경로 | - 다익스트라<br>- 벨만-포트 |
+| 깊이 우선 탐색 | 모든 경로                                                                      | - 메모리 사용량이 제한적인 탐색<br>- 백트래킹 문제                                                                          |
+| 너비 우선 탐색 | 최적<br>레벨 순회<br>최소 단계<br>네트워크 전파                                | - 시작 지점부터 최단 경로나 최소 횟수를 찾아야 함                                                                           |
+| 백트래킹       | 조합<br>순열<br>부분 집합                                                      | - 조합 및 순열 문제<br>- 특정 조건 만족하는 부분 집합                                                                       |
+| 최단 경로      | 최단 경로<br>최소 시간<br>최소 비용<br>트래픽<br>음의 순환<br>단일 출발점 경로 | - 다익스트라<br>- 벨만-포트                                                                                                 |
 
 ## 프로그래머스
 
@@ -99,41 +99,135 @@ https://school.programmers.co.kr/
 
 최악의 경우 시간복잡도 고려
 
-| 시간복잡도 | 최대 연산 횟수(1초) |
-|---|---|
-| $O(N!)$ | 10 |
-| $O(2^N)$ | 20 ~ 25 |
-| $O(N^3)$ | 200~300 |
-| $O(N^2)$ | 3,000~5,000 |
-| $O(N logN)$ | 100만 |
-| $O(N)$ | 1,000만~2,000만 |
-| $O(logN)$ | 10억 |
+
+| 시간복잡도  | 최대 연산 횟수(1초) |
+| ----------- | ------------------- |
+| $O(N!)$     | 10                  |
+| $O(2^N)$    | 20 ~ 25             |
+| $O(N^3)$    | 200~300             |
+| $O(N^2)$    | 3,000~5,000         |
+| $O(N logN)$ | 100만               |
+| $O(N)$      | 1,000만~2,000만     |
+| $O(logN)$   | 10억                |
 
 ## 코딩 테스트 필수 문법
 
 - 빌트인 데이터 타입 - [소스](./advanced/algorithm01/app01/app01.cpp)
+
 - STL - [소스](./advanced/algorithm01/app02/app02.cpp)
     - 특정 타입을 한정하지 않는 라이브러리
     - `컨테이너`, `알고리즘`, `반복자`
 
 - STL 컨테이너 - C#, Java, Python에서 **Collection**으로 호칭 - [소스](./advanced/algorithm01/app03/app03.cpp)
-   - 시퀀스 타입 - `벡터`, 리스트, 배열, 데크 등
-   - 연관 타입 - `셋`, `맵`, 멀티셋, 멀티맵 등
-   - 어댑터 타입 - 스택, 큐, 우선순위 큐
+    - 시퀀스 타입 - `벡터`, 리스트, 배열, 데크 등
+    - 연관 타입 - `셋`, `맵`, 멀티셋, 멀티맵 등
+    - 어댑터 타입 - 스택, 큐, 우선순위 큐
 
 - STL 알고리즘 - 정렬, 검색 등 기본적인 알고리즘 - [소스](./advanced/algorithm01/app04/app04.cpp)
-   - `find()`, `count()`, for_each(), equal(), any_of() 등
-   - copy(), replace(), fill(), transform() 등
-   - reverse(), remove(), `unique()`, rotate() 등
-   - `sort()`, stable_sort(), partial_sort() 등
-   - `binary_search()`, lower_bound(), upper_bound(), set_union() 등
-   - `next_permutation()`, accumalate(), partial_sum() 등
-   - `max_element()`, `min_element()`, clamp() 등
+    - `find()`, `count()`, for_each(), equal(), any_of() 등
+    - copy(), replace(), fill(), transform() 등
+    - reverse(), remove(), `unique()`, rotate() 등
+    - `sort()`, stable_sort(), partial_sort() 등
+    - `binary_search()`, lower_bound(), upper_bound(), set_union() 등
+    - `next_permutation()`, accumalate(), partial_sum() 등
+    - `max_element()`, `min_element()`, clamp() 등
 
-- 함수
+- 함수 = 메서드 - [소스](./advanced/algorithm01/app05/app05.cpp)
+
+- 코딩 테스트 코드 구현 노하우 - [소스](./advanced/algorithm01/app06/app06.cpp)
+    - 조기 반환 - 함수 끝에 도달하기 전에 반환하는 법
+    - 보호 구문 - 예외처리 코드 추가하는 법(try ~ catch 아님)
+    - 의미있는 변수명 사용
+    - continue 잘쓸 것 -> 속도 개선 $O(N^2)$ -> $O(NlogN)$
+    - 한가지 일만 하는 함수를 만들기
+    - STL 적극 활용
+
+## 코딩 테스트 완전 정복
+
+### 배열
+
+- 배열 선언 : arr[]
+- 배열 원소 접근 : arr[1]
+- 배열 원소별 주소 : &arr[0]
+
+#### 배열 시간복잡도
+
+- arr[1] : $O(1)$
+- 배열의 맨 앞 원소 삽입 : $O(N)$
+- 배열 중간에 원소 삽입 : $O(N)$
+
+#### 배열 선택 고려점
+
+- 배열 초기에 메모리 할당할 수 있는 크기 확인
+- 로직 중간에 데이터 삽입/삭제 등 많은지 확인
+- 배열 사용 최소화 -> STL 벡터를 사용 권장
+
+#### 코딩 테스트 연습
+
+배열에서 두 수 뽑아서 더하기 - [소스](./advanced/algorithm02/sol05-4-03/sol05-4-03.cpp)
+
+https://school.programmers.co.kr/learn/courses/30/lessons/68644?language=cpp
+
+![](assets/20260803_103344_image.png)
+
+모의고사 - [소스](./advanced/algorithm02/sol05-4-04/sol05-4-04.cpp)
+
+https://school.programmers.co.kr/learn/courses/30/lessons/42840
+
+- 기본 테스트 통과
+
+    ![](assets/20260803_112220_image.png)
+
+- 테스트 케이스 통과
+
+    ![](assets/20260803_112320_image.png)
+
+### 스택
+
+- LIFO. push(), pop(), is_Full(), is_Empty(), top() 등
+
+#### 코딩 테스트 연습
+
+괄호 짝 맞추기 - [소스](./advanced/algorithm02/sol06-3-08/sol06-3-08.cpp)
+
+https://school.programmers.co.kr/learn/courses/30/lessons/12909?language=cpp
+
+- 테스트 케이스 추가
+
+    ![](assets/20260803_121139_image.png)
+
+- 효율성 테스트(시간복잡도 체크)
+
+    ![](assets/20260803_121242_image.png)
+
+#### 모의 테스트 연습
+
+주식가격 - [소스](./advanced/algorithm02/sol06-4-12/sol06-4-12.cpp)
+
+https://school.programmers.co.kr/learn/courses/30/lessons/42584
+
+- prices [1, 2, 3, 2, 3]일 경우 주식 가격이 떨어지지 않는 시간 result [4, 3, 1, 1, 0]
+    - 인덱스 0. 가격 1의 경우 마지막까지 가격이 떨어지지 않음 -> 4초
+    - 인덱스 1. 가격 2의 경우 마지막까지 2 이하로 떨어지지 않음 -> 3초
+    - 인덱스 2. 가격 3의 경우 1초 후에 2로 떨어짐 -> 1초
+
+- 스택에 올라가는 가격까지 계속 Push
+    - 떨어지는 가격에서 스택 top 값과 비교 후 Pop
+    - 다음 top의 값이 작으면 Push
+    - 반복 후 들어있는 인덱스를 Pop, 이전 Pop의 인덱스 빼기 다음 Pop 인덱스하면 길이로 확정
+
+표 편집 - [소스]()
+
+https://school.programmers.co.kr/learn/courses/30/lessons/81303?language=cpp
+
+- command : `U k`(위로 k칸), `D k`(아래로 k칸), `C`(삭제), `Z`(복구)
+- 삭제를 위해서 up, down 배열이 필요
+- 맨위, 맨 아래 데이터 접근을 위해서 가상공간이 하나씩 필요
+
+- C(삭제) 시 up[down[k]] = up[k], down[up[k]] = down[k] 로 변경 필요
+- 삭제한 요소 스택에 push()
 
 
-- 코딩 테스트 코드 구현 노하우
 
 
 
