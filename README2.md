@@ -68,10 +68,10 @@
 <br>
 
 
-| 알고리즘 | 키워드 | 상세 |
-| --- | --- | --- |
-| 스택 | 쌍이 맞는지<br>최근 | - 저장을 한 뒤 반대로 처리가 필요<br>- 데이터의 조합이 균형적이어야 할 때<br>- 알고리즘이 재귀적인 특성<br>- 최근 상태 추척 |
-| 큐 | 순서대로<br>~대로 동작하는 경우<br>스케줄링<br>최소 시간 | - 특정 조건에 따라 시뮬레이션할 때<br>- 시작 지점 부터 목표 지점까지 최단 거리 |
+| 알고리즘       | 키워드                                                                         | 상세                                                                                                                        |
+| -------------- | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| 스택           | 쌍이 맞는지<br>최근                                                            | - 저장을 한 뒤 반대로 처리가 필요<br>- 데이터의 조합이 균형적이어야 할 때<br>- 알고리즘이 재귀적인 특성<br>- 최근 상태 추척 |
+| 큐             | 순서대로<br>~대로 동작하는 경우<br>스케줄링<br>최소 시간                       | - 특정 조건에 따라 시뮬레이션할 때<br>- 시작 지점 부터 목표 지점까지 최단 거리                                              |
 | 깊이 우선 탐색 | 모든 경로                                                                      | - 메모리 사용량이 제한적인 탐색<br>- 백트래킹 문제                                                                          |
 | 너비 우선 탐색 | 최적<br>레벨 순회<br>최소 단계<br>네트워크 전파                                | - 시작 지점부터 최단 경로나 최소 횟수를 찾아야 함                                                                           |
 | 백트래킹       | 조합<br>순열<br>부분 집합                                                      | - 조합 및 순열 문제<br>- 특정 조건 만족하는 부분 집합                                                                       |
@@ -113,34 +113,33 @@ https://school.programmers.co.kr/
 ## 코딩 테스트 필수 문법
 
 - 빌트인 데이터 타입 - [소스](./advanced/algorithm01/app01/app01.cpp)
-
 - STL - [소스](./advanced/algorithm01/app02/app02.cpp)
-    - 특정 타입을 한정하지 않는 라이브러리
-    - `컨테이너`, `알고리즘`, `반복자`
 
+  - 특정 타입을 한정하지 않는 라이브러리
+  - `컨테이너`, `알고리즘`, `반복자`
 - STL 컨테이너 - C#, Java, Python에서 **Collection**으로 호칭 - [소스](./advanced/algorithm01/app03/app03.cpp)
-    - 시퀀스 타입 - `벡터`, 리스트, 배열, 데크 등
-    - 연관 타입 - `셋`, `맵`, 멀티셋, 멀티맵 등
-    - 어댑터 타입 - 스택, 큐, 우선순위 큐
 
+  - 시퀀스 타입 - `벡터`, 리스트, 배열, 데크 등
+  - 연관 타입 - `셋`, `맵`, 멀티셋, 멀티맵 등
+  - 어댑터 타입 - 스택, 큐, 우선순위 큐
 - STL 알고리즘 - 정렬, 검색 등 기본적인 알고리즘 - [소스](./advanced/algorithm01/app04/app04.cpp)
-    - `find()`, `count()`, for_each(), equal(), any_of() 등
-    - copy(), replace(), fill(), transform() 등
-    - reverse(), remove(), `unique()`, rotate() 등
-    - `sort()`, stable_sort(), partial_sort() 등
-    - `binary_search()`, lower_bound(), upper_bound(), set_union() 등
-    - `next_permutation()`, accumalate(), partial_sum() 등
-    - `max_element()`, `min_element()`, clamp() 등
 
+  - `find()`, `count()`, for_each(), equal(), any_of() 등
+  - copy(), replace(), fill(), transform() 등
+  - reverse(), remove(), `unique()`, rotate() 등
+  - `sort()`, stable_sort(), partial_sort() 등
+  - `binary_search()`, lower_bound(), upper_bound(), set_union() 등
+  - `next_permutation()`, accumalate(), partial_sum() 등
+  - `max_element()`, `min_element()`, clamp() 등
 - 함수 = 메서드 - [소스](./advanced/algorithm01/app05/app05.cpp)
-
 - 코딩 테스트 코드 구현 노하우 - [소스](./advanced/algorithm01/app06/app06.cpp)
-    - 조기 반환 - 함수 끝에 도달하기 전에 반환하는 법
-    - 보호 구문 - 예외처리 코드 추가하는 법(try ~ catch 아님)
-    - 의미있는 변수명 사용
-    - continue 잘쓸 것 -> 속도 개선 $O(N^2)$ -> $O(NlogN)$
-    - 한가지 일만 하는 함수를 만들기
-    - STL 적극 활용
+
+  - 조기 반환 - 함수 끝에 도달하기 전에 반환하는 법
+  - 보호 구문 - 예외처리 코드 추가하는 법(try ~ catch 아님)
+  - 의미있는 변수명 사용
+  - continue 잘쓸 것 -> 속도 개선 $O(N^2)$ -> $O(NlogN)$
+  - 한가지 일만 하는 함수를 만들기
+  - STL 적극 활용
 
 ## 코딩 테스트 완전 정복
 
@@ -176,11 +175,10 @@ https://school.programmers.co.kr/learn/courses/30/lessons/42840
 
 - 기본 테스트 통과
 
-    ![](assets/20260803_112220_image.png)
-
+  ![](assets/20260803_112220_image.png)
 - 테스트 케이스 통과
 
-    ![](assets/20260803_112320_image.png)
+  ![](assets/20260803_112320_image.png)
 
 ### 스택
 
@@ -194,11 +192,10 @@ https://school.programmers.co.kr/learn/courses/30/lessons/12909?language=cpp
 
 - 테스트 케이스 추가
 
-    ![](assets/20260803_121139_image.png)
-
+  ![](assets/20260803_121139_image.png)
 - 효율성 테스트(시간복잡도 체크)
 
-    ![](assets/20260803_121242_image.png)
+  ![](assets/20260803_121242_image.png)
 
 #### 모의 테스트 연습
 
@@ -207,31 +204,125 @@ https://school.programmers.co.kr/learn/courses/30/lessons/12909?language=cpp
 https://school.programmers.co.kr/learn/courses/30/lessons/42584
 
 - prices [1, 2, 3, 2, 3]일 경우 주식 가격이 떨어지지 않는 시간 result [4, 3, 1, 1, 0]
-    - 인덱스 0. 가격 1의 경우 마지막까지 가격이 떨어지지 않음 -> 4초
-    - 인덱스 1. 가격 2의 경우 마지막까지 2 이하로 떨어지지 않음 -> 3초
-    - 인덱스 2. 가격 3의 경우 1초 후에 2로 떨어짐 -> 1초
 
+  - 인덱스 0. 가격 1의 경우 마지막까지 가격이 떨어지지 않음 -> 4초
+  - 인덱스 1. 가격 2의 경우 마지막까지 2 이하로 떨어지지 않음 -> 3초
+  - 인덱스 2. 가격 3의 경우 1초 후에 2로 떨어짐 -> 1초
 - 스택에 올라가는 가격까지 계속 Push
-    - 떨어지는 가격에서 스택 top 값과 비교 후 Pop
-    - 다음 top의 값이 작으면 Push
-    - 반복 후 들어있는 인덱스를 Pop, 이전 Pop의 인덱스 빼기 다음 Pop 인덱스하면 길이로 확정
 
-표 편집 - [소스]()
+  - 떨어지는 가격에서 스택 top 값과 비교 후 Pop
+  - 다음 top의 값이 작으면 Push
+  - 반복 후 들어있는 인덱스를 Pop, 이전 Pop의 인덱스 빼기 다음 Pop 인덱스하면 길이로 확정
+
+표 편집 - [소스](./advanced/algorithm02/sol06-4-14/sol06-4-14.cpp)
 
 https://school.programmers.co.kr/learn/courses/30/lessons/81303?language=cpp
 
 - command : `U k`(위로 k칸), `D k`(아래로 k칸), `C`(삭제), `Z`(복구)
 - 삭제를 위해서 up, down 배열이 필요
 - 맨위, 맨 아래 데이터 접근을 위해서 가상공간이 하나씩 필요
+- 중요 로직
 
-- C(삭제) 시 up[down[k]] = up[k], down[up[k]] = down[k] 로 변경 필요
-- 삭제한 요소 스택에 push()
+  - C(삭제) 시 k(삭제할 인덱스) -> `up[down[k]] = up[k]`, `down[up[k]] = down[k]` 로 변경 필요
+  - 삭제한 요소 스택에 push()
+  - Z(복구) 시 restore(복구할 인덱스) -> `up[down[restore]]`, `down[up[restore]]` 복구
+  - 복구한 요소 스택에서 pop()
+- C++ STL 스택과 다른 언어의 스택과 차이점
+
+  - 값 조회와 삭제를 분리
+  - stack.pop() 값을 할당할 수 없음! ~~`int r = stack.pop()`~~
+  - stack.top() 으로 값을 가져온 후 stack.pop() 으로 스택값을 지워야 함
+
+![](assets/20260804_102122_image.png)
+
+교재에서는 $O(N)$ 으로 설명. $O(NlogN)$ 정도로 예상
+
+#### 풀이 결과 예제
+
+- 테스트 케이스 통과, 효율성 테스트 실패
+
+    ![](assets/20260804_103052_image.png)
+
+### 큐
+
+#### 큐 ADT
+
+- isFull(), isEmpty(), push(), pop(), front, rear
+- 스택과 유사한 함수명 사용
+
+#### 코딩 테스트 연습
+
+요세푸스 문제 - [소스](./advanced/algorithm02/sol07-2-15/sol07-2-15.cpp)
+
+- 1, 2, 3, 4, 5의 경우
+    - 1번째 : 3, 4, 5, 1
+    - 2번째 : 5, 1, 3
+    - 3번째 : 3, 5
+    - 4번째 : 3
+
+#### 모의 테스트
+
+카드뭉치 - [소스](./advanced/algorithm02/sol07-3-17/sol07-3-17.cpp)
+
+https://school.programmers.co.kr/learn/courses/30/lessons/159994?language=cpp
+
+- cards1, cards2, goal을 모두 큐로 생성
+- goal에 데이터가 없을 때까지 반복
+- card1에 맨앞데이터와 goal맨앞데이터가 동일하면 cards1.pop(), goal.pop()
+- card2에 맨앞데이터와 goal맨앞데이터가 동일하면 cards2.pop(), goal.pop()
+- 일치하는 cards 내용이 없으면 종료
+- 반복 완료 후 goal에 데이터가 없으면 "Yes"
+
+### 해시
+
+키와 값의 쌍으로 저장 후 빠른 데이터 검색을 제공하는 자료구조, 딕셔너리, JSON 등
+
+- 해시 : 데이터를 빠르게 찾기 위한 기술
+- `딕셔너리` : 키(Key)-값(Value)로 저장하는 자료구조. 해시 테이블로 구현되어 있음
+
+#### 해시함수
+
+키에 대한 인덱스를 구하는 함수
+
+- 나눗셈법 : x % k
+- 곱셈법 : `나눗셈법`에 특수값을 더 곱한 방법
+- 문자열해싱 : 각 문자열 자리마다 승수를 곱한 합산. 무리하게 큰 수가 도출될 수 있음
+    - 각 자리 나눗셈법 사용. 오버플로우 방지
+
+#### 충돌 처리
+
+- 체이닝방법 : 해시테이블 한 행(버킷)에 연결리스트(Linked-List)로 여러값을 나열하는 방법
+    - 공간활용도, 검색성능 떨어짐
+
+- 개방 주소법 : 해시테이블에 빈 행까지 이동, 값을 할당해서 충돌을 방지
+
+#### 모의 테스트
+
+완주하지 못한 선수 - [소스](./advanced/algorithm02/sol08-5-20/sol08-5-20.cpp)
+
+https://school.programmers.co.kr/learn/courses/30/lessons/42576?language=cpp
+
+- 참가자 이름을 해시테이블로 추가. 키-값 : 이름-명 수
+- 완주한 선수 이름을 해시테이블에서 찾아서 값을 1씩 줄임
+- 해시를 순회 후 값이 0이 아닌 키(이름)를 반환
+
+2중 for문으로는 해결하지 못함
 
 
 
 
 
 
+
+
+
+
+
+### 코딩 테스트 준비물
+
+- 주최 기업마다 준비물이 다름
+- PC 제공여부(보통 노트북)
+- 종이, 펜 허용
 
 ### 코딩 테스트 저자의 글
 

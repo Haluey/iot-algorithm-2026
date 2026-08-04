@@ -10,7 +10,7 @@ using namespace std;
 // 프로그래머스의 함수 프로토타입
 vector<int> solution(vector<int> numbers) {
     set<int> sum;   // 두 수의 합을 저장할 변수
-    
+
     for (int i = 0; i < numbers.size(); ++i) {
         for (int j = i + 1; j < numbers.size(); ++j) {
             sum.insert(numbers[i] + numbers[j]);    // 중복 제거
