@@ -3,6 +3,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Project Path="dp-integer-triangle/dp-integer-triangle.vcxproj" Id="50576a08-04c3-4dba-995b-be72bf3194df" />
   <Project Path="sol05-4-03/sol05-4-03.vcxproj" Id="a0dfe56f-3093-42eb-8608-b458b41a885d" />
   <Project Path="sol05-4-04-pre/sol05-4-04-pre.vcxproj" Id="c28342b1-f401-4097-9660-ac6462d79b31" />
   <Project Path="sol05-4-04/sol05-4-04.vcxproj" Id="671cbeee-b6b6-412e-9cc1-a9bfdf19c7b0" />
