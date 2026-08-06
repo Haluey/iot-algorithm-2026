@@ -15,4 +15,7 @@
   <Project Path="sol08-5-20/sol08-5-20.vcxproj" Id="5c9bc348-0655-4860-8ecf-02d3e34201c0" />
   <Project Path="sol08-5-27/sol08-5-27.vcxproj" Id="1debd5a1-434a-4f11-a55b-5891f95d79e1" />
   <Project Path="sol09-4-28/sol09-4-28.vcxproj" Id="b615fa95-27b6-4abd-ad85-4a39e589072b" />
+  <Project Path="sol09-5-31/sol09-5-31.vcxproj" Id="52326511-c25f-431c-9aeb-f546d31877fe" />
+  <Project Path="sol11-4-36/sol11-4-36.vcxproj" Id="689de2b4-61d4-4522-ab7c-a94df18de48b" />
+  <Project Path="sol11-extra-bellman-ford/sol11-extra-bellman-ford.vcxproj" Id="4b184fcb-d511-4d8f-8b5a-02a297d773b4" />
 </Solution>
